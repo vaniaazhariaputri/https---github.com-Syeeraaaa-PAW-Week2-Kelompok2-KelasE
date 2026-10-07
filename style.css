@@ -1,0 +1,546 @@
+:root {
+     --primary-color: #2e7d57; 
+    --primary-dark: #1f4d3a;
+    --dark-bg: #0f172a;
+    --slate-bg: #1e293b;
+    --body-bg: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #334155;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+    --transition: all 0.3s ease;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto',Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--body-bg);
+    color: var(--text-main);
+}
+
+
+/* HEADER */
+
+.landing-page header {
+    background-color: #1f4d3a;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.landing-page header h1 {
+    margin-bottom: 8px;
+}
+
+.landing-page header p {
+    margin-top: 0;
+}
+
+
+/* NAVIGASI */
+
+.landing-page nav {
+    margin-top: 25px;
+}
+
+.landing-page nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+.landing-page nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* MAIN */
+
+.landing-page main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+
+/* SECTION */
+
+.landing-page section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.landing-page section h2 {
+    color: #1f4d3a;
+    margin-top: 0;
+}
+
+
+/* ARTICLE */
+
+.landing-page article {
+    margin-top: 15px;
+}
+
+
+/* LIST */
+
+.landing-page li {
+    margin-bottom: 10px;
+}
+
+
+/* FOOTER */
+
+.landing-page footer {
+    background-color: #1f4d3a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/*STYLE BUAT HALAMAN HOMEPAGE */
+.site-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 40px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.logo-icon {
+    font-size: 1.6rem;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    background-color: rgba(255, 255, 255, 0.12);
+    transition: var(--transition);
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+
+/* --- 2. HERO SECTION (CSS GRID) --- */
+.hero {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 30px;
+    align-items: center;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 40px 30px;
+    background: linear-gradient(135deg, #ffffff, #f0fdf4);
+    border-radius: 16px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+    color: var(--primary-dark);
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+}
+
+.hero-card {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 5px solid var(--primary-color);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.hero-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.hero-card ul {
+    padding-left: 20px;
+    list-style: none;
+}
+
+.hero-card li {
+    margin-bottom: 8px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 12px 26px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(31, 77, 58, 0.35);
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 12px 26px;
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: #dcfce7;
+    color: var(--primary-dark);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: var(--primary-color);
+    position: relative;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.hero-card-link {
+    display: inline-block;
+    margin-top: 12px;
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.hero-card-link:hover {
+    text-decoration: underline;
+}
+
+
+/* --- 3. DAFTAR FITUR (CSS GRID) --- */
+.fitur-section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    max-width: 1100px;
+    margin: 0 auto 25px;
+    padding: 0 20px;
+}
+
+.section-title h2 {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    margin-bottom: 6px;
+}
+
+.section-title p {
+    color: var(--text-muted);
+}
+
+.fitur-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.fitur-card {
+    background-color: var(--card-bg);
+    padding: 25px 20px;
+    border-radius: 12px;
+    border-top: 4px solid var(--primary-color);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+    transition: var(--transition);
+}
+
+.fitur-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.fitur-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.fitur-card h3 {
+    color: var(--primary-dark);
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.fitur-card p {
+    font-size: 0.92rem;
+    color: var(--text-muted);
+}
+
+
+/* --- STATISTIK --- */
+.statistik {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 40px 30px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    border-radius: 16px;
+    color: white;
+    text-align: center;
+}
+
+.statistik h2 {
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+.statistik-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.stat-item h3 {
+    font-size: 2.2rem;
+    color: #bbf7d0;
+    margin-bottom: 5px;
+}
+
+.stat-item p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+
+/* --- 4. FORM (LABEL + FOCUS STATE) --- */
+.form-section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+    border-left: 5px solid var(--primary-color);
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--primary-dark);
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 11px 14px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: var(--text-main);
+    background-color: #f9fafb;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(31, 77, 58, 0.15);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-form .btn-primary {
+    grid-column: 1 / -1;
+    justify-self: start;
+}
+
+
+/* --- FOOTER HOMEPAGE --- */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 40px;
+    font-size: 0.95rem;
+}
+
+.footer-links {
+    margin-top: 8px;
+    font-size: 0.85rem;
+}
+
+.footer-links a {
+    color: #bbf7d0;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 900px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 18px 20px;
+    }
+
+    .navbar {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .navbar a {
+        padding: 7px 13px;
+        font-size: 0.82rem;
+    }
+
+    .hero {
+        margin: 20px 12px;
+        padding: 25px 18px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.35rem;
+    }
+
+    .fitur-section {
+        padding: 0 12px;
+    }
+
+    .fitur-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .statistik {
+        margin: 20px 12px;
+        padding: 30px 20px;
+    }
+
+    .form-section {
+        margin: 20px 12px;
+        padding: 22px 18px;
+    }
+
+    .btn-primary,
+    .btn-outline {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .landing-page section {
+        padding: 22px 18px;
+    }
+    .statistik-grid 
+    {
+        grid-template-columns: 1fr;
+    }
+}
